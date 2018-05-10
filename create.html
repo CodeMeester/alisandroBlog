@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css\stylish.css">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+  </head>
+  <body class="resizable">
+
+    <nav>
+      <a class="navbar-brand" href="index.html">Comic Theory</a>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <form class="myPost" action="http://localhost:3000/blog" method="post">
+      <label class="headerBox" for="">Create New Post</label>
+      <br>
+      <label for="">Topic:</label>
+      <input type="text" name="title" value="">
+      <br>
+      <br>
+      <input class="newPost" type="textarea" name="content" value="" placeholder="Write your story here:">
+      <br>
+      <br>
+      <button type="submit" name="submit">Post now!</button>
+    </form>
+
+    <div id="Your saved post">
+    <h4 class="theHeader"></h4>
+    <p class="created"></p>
+    </div>
+
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+
+  $('form.myPost').submit(function (event) {
+      event.preventDefault();
+
+      let title = $('input[name="title"]').val();
+      let content = $('input[name="content"]').val();
+      
+      // if (first_name.length == 0) {
+      //   alert('A first Name is required!');
+      //   return false;
+      // }
+
+      $.ajax({
+        url: 'http://localhost:3000/blog',
+        method: 'post',
+        data: {
+          "title": title,
+          "content": content
+        }
+      }).done(function (saved_post) {
+        alert('Post uploaded');
+        $('.theHeader').html('Your Title: ' + saved_post.title).show();
+        $('.created').html('You said: ' + saved_post.content).show();
+      });
+    });
+  
+  });
+  </script>
+</html>

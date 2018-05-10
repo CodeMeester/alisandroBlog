@@ -1,0 +1,304 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "firstName": "john",
+      "LastName": "Mac",
+      "email_address": "john.mac@mac.com",
+      "password": "blow",
+      "gender": "male",
+      "button": "",
+      "id": 2
+    },
+    {
+      "firstName": "well",
+      "LastName": "Baron",
+      "email_address": "john.mac@mac.com",
+      "password": "plasn",
+      "gender": "female",
+      "submit": "",
+      "id": 3
+    },
+    {
+      "firstName": "",
+      "password": "",
+      "id": 4
+    },
+    {
+      "firstName": "",
+      "password": "",
+      "id": 5
+    },
+    {
+      "firstName": "",
+      "password": "",
+      "id": 6
+    },
+    {
+      "firstName": "",
+      "password": "",
+      "id": 7
+    },
+    {
+      "firstName": "MPojs",
+      "LastName": "NDL",
+      "email_address": "this@mail.com",
+      "password": "moew",
+      "gender": "null",
+      "submit": "",
+      "id": 8
+    },
+    {
+      "firstName": "sign",
+      "lastName": "monu",
+      "emailAddress": "atwiinenewton@gmail.com",
+      "password": "boq",
+      "id": 9
+    },
+    {
+      "firstName": "sign",
+      "password": "klop",
+      "id": 10
+    },
+    {
+      "firstName": "jacky",
+      "password": "qwert",
+      "id": 11
+    },
+    {
+      "firstName": "well",
+      "emailAddress": "with@mail.com",
+      "password": "klop",
+      "id": 12
+    },
+    {
+      "firstName": "sign",
+      "emailAddress": "scsc@gmail.com",
+      "password": "how",
+      "id": 13
+    },
+    {
+      "firstName": "jacky",
+      "LastName": "Is",
+      "emailAddress": "no@mail.com",
+      "password": "yuio",
+      "id": 14
+    },
+    {
+      "firstName": "john",
+      "LastName": "Mac",
+      "emailAddress": "alisandro.baron3@gmail.com",
+      "password": "nnn",
+      "id": 15
+    },
+    {
+      "firstName": "well",
+      "LastName": "Mac",
+      "emailAddress": "mounu@mail.com",
+      "password": "pop",
+      "id": 16
+    },
+    {
+      "firstName": "well",
+      "LastName": "NDL",
+      "emailAddress": "alisandro.baron3@gmail.com",
+      "password": "m,kk",
+      "id": 17
+    },
+    {
+      "firstName": "sign",
+      "LastName": "plos",
+      "emailAddress": "musttest@popup.com",
+      "gender": "male",
+      "password": "mom",
+      "id": 18
+    },
+    {
+      "firstName": "john",
+      "LastName": "Dicky",
+      "emailAddress": "musttest@popup.com",
+      "gender": "male",
+      "password": "popice",
+      "id": 19
+    },
+    {
+      "firstName": "jacky",
+      "LastName": "Dicky",
+      "emailAddress": "with@mail",
+      "gender": "female",
+      "password": "yuo",
+      "id": 20
+    },
+    {
+      "firstName": "sign",
+      "LastName": "NDL",
+      "emailAddress": "no@mail.com",
+      "gender": "female",
+      "password": "pop",
+      "id": 21
+    },
+    {
+      "firstName": "alisandro",
+      "LastName": "Baron",
+      "emailAddress": "mounu@mail.com",
+      "gender": "male",
+      "password": "password",
+      "id": 22
+    },
+    {
+      "firstName": "Alisandro",
+      "LastName": "Baron",
+      "emailAddress": "alisandro.baron3@gmail.com",
+      "gender": "male",
+      "password": "password",
+      "id": 23
+    },
+    {
+      "firstName": "john",
+      "LastName": "Mac",
+      "emailAddress": "no@mail.com",
+      "gender": "male",
+      "password": "nome",
+      "id": 24
+    },
+    {
+      "firstName": "Barry",
+      "LastName": "Allen",
+      "emailAddress": "barryallen@gmail.com",
+      "gender": "null",
+      "password": "flash",
+      "id": 25
+    },
+    {
+      "firstName": "Barry",
+      "LastName": "Mac",
+      "emailAddress": "mounu@mail.com",
+      "gender": "male",
+      "password": "plplp",
+      "id": 26
+    },
+    {
+      "firstName": "Barry",
+      "LastName": "White",
+      "emailAddress": "scsc@gmail.com",
+      "gender": "female",
+      "password": "noma",
+      "id": 27
+    },
+    {
+      "firstName": "New",
+      "LastName": "Name",
+      "emailAddress": "no@mail.com",
+      "gender": "male",
+      "password": "post",
+      "id": 28
+    },
+    {
+      "firstName": "well",
+      "LastName": "plos",
+      "emailAddress": "scsc@gmail.com",
+      "gender": "male",
+      "password": "yuo",
+      "id": 29
+    },
+    {
+      "firstName": "Isaac",
+      "LastName": "Baron",
+      "emailAddress": "isaac1@gmail.com",
+      "gender": "male",
+      "password": "password",
+      "id": 30
+    }
+  ],
+  "blog": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "content": "this stuff you writing about",
+      "author": "typicode"
+    },
+    {
+      "title": "TH",
+      "content": "",
+      "button": "",
+      "id": 2
+    },
+    {
+      "title": "New Movie",
+      "content": "Guys new movie coming out",
+      "button": "",
+      "id": 3
+    },
+    {
+      "title": "New Movie",
+      "content": "Guys new movie coming out",
+      "button": "",
+      "id": 4
+    },
+    {
+      "title": "Mna",
+      "content": "This is stuff",
+      "post": "",
+      "id": 5
+    },
+    {
+      "title": "yoiocsbcj",
+      "content": "s,cbscsb",
+      "post": "",
+      "id": 6
+    },
+    {
+      "title": "bsczsc",
+      "content": "asdcszcscvsxcxc",
+      "submit": "",
+      "id": 7
+    },
+    {
+      "title": "Dark place",
+      "content": "This is my story of a boy that has gone to a dark place",
+      "submit": "",
+      "id": 8
+    },
+    {
+      "title": "Dark place",
+      "content": "This is my story of a boy that has gone to a dark place",
+      "submit": "",
+      "id": 9
+    },
+    {
+      "title": "Dark place",
+      "content": "This is my story of a boy that has gone to a dark place",
+      "submit": "",
+      "id": 10
+    },
+    {
+      "title": "New Movie",
+      "content": "This is my story of a boy that has gone to a dark place",
+      "id": 11
+    },
+    {
+      "title": "It works ",
+      "content": "My method should work by now",
+      "id": 12
+    },
+    {
+      "title": "The world",
+      "content": "Yes the world is damn dark",
+      "id": 13
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

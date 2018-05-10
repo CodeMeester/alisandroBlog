@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css\stylish.css">
+
+  <style media="screen">
+    p.notice {
+      color: white;
+      background-color: lightskyblue;
+      padding: 10px;
+      display: none;
+    }
+
+    ;
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a class="navbar-brand" href="index.html">Comic Theory</a>
+  </nav>
+
+  
+
+  <form class="registerForm" method="post" action="http://localhost:3000/user">
+    <label for="">Let's create an account</label>
+    <br>
+    <input type="text" name="firstName" value="" placeholder="name" required>
+    <br>
+    <input type="text" name="LastName" value="" placeholder="surname" required>
+    <br>
+    <input type="email" name="emailAddress" value="" placeholder="email will be your username" required>
+    <br>
+    <input type="password" name="password" value="" placeholder="password" required>
+    <br>
+    <label for="gender">Gender</label>
+      <select id="gender" name="gender">
+        <option value="null">Please Specify</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="idk">I dont know</option>
+      </select>
+    <br>
+      <div class="">
+        <!-- a color picker for users favourite colour -->
+        <label for="">Your favourite colour</label>
+        <input type="color" name="" value="">
+      </div>
+    
+    <p>
+      <input type="submit" name="submitButton" value="Submit">
+    </p>
+  </form>
+
+  <p class="notice"></p>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+
+    $('form.registerForm').submit(function (event) {
+      event.preventDefault();
+
+      let first_name = $('input[name="firstName"]').val();
+      let last_name = $('input[name="LastName"]').val();
+      let email_address = $('input[name="emailAddress"]').val();
+      let password = $('input[name="password"]').val();
+      let gender_type = $("#gender").val();
+      // alert(gender_type);
+      if (first_name.length == 0) {
+        alert('A first Name is required!');
+        return false;
+      }
+
+      $.ajax({
+        url: 'http://localhost:3000/user',
+        method: 'post',
+        data: {
+          "firstName": first_name,
+          "LastName": last_name,
+          "emailAddress": email_address,
+          "gender": gender_type,
+          "password": password
+        }
+      }).done(function (saved_user) {
+        alert('Your account for : ' + saved_user.firstName + " " + saved_user.LastName + " " + 'is saved');
+        $('.notice').html('Log in with:' + saved_user.emailAddress).show();
+      });
+    });
+
+
+  });
+
+</script>
+
+</html>

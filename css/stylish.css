@@ -1,0 +1,91 @@
+.popLog{
+  float: right;
+  background-color: #83dede ;
+    border-style: solid;
+    width: 300px;
+    height: 250px;
+    padding: 25px;
+    margin: 20px;
+}
+
+.popLogBut{
+  margin-top: 50px;
+  margin-right: 10px;
+  float: right;
+}
+
+
+
+nav{
+  background-color: #081e33;
+  height: 100px;
+  /* position: fixed;
+    top: 0;
+    width: 100%; */
+}
+
+.formAlign{
+  padding: 15px;
+  margin: 15px;
+}
+
+.registerForm{
+  background-color: #83dede ;
+    border-style: solid;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    padding: 25px;
+    margin: 20px;
+    margin-left: 100px;
+}
+
+input{
+  margin: 10px;
+}
+
+.resizable{
+  font-size: 20px;
+}
+
+.startImg{
+  margin: 10px;
+  align-self: center;
+  width: 100%;
+  height: 350px;
+}
+
+.newPost{
+  width: 350px;
+  height: 100px;
+  /* background-color: grey; */
+}
+
+.myPost{
+  
+    border-style: solid;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    padding: 25px;
+    margin: 20px;
+}
+
+.headerBox{
+ border-style: solid;
+ padding: 5px;
+ margin: 15px;
+
+}
+
+.notice{
+  float: right;
+  width: 360px;
+}
+
+.returnedPost{
+  border-style: solid;
+  padding: 10px;
+  margin: 10 px;
+  text-align: center;
+}
